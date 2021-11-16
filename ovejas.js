@@ -7,7 +7,8 @@ let array = [
     false, false, true,  true
 ]
 var oveja=0;
-var array_counter = new Boolean();
+var lobo=0;
+
 
  array.forEach(function(array, index) {
     console.log(`${index} : ${array}`);
@@ -15,7 +16,10 @@ var array_counter = new Boolean();
 
 for(var i = 0; i < array.length; ++i){
     if(array[i] == true)
-        oveja++;
+        oveja++; 
+    else lobo++;
 }
-console.log(oveja);
+
+console.log("ovejas:",oveja);
+console.log("lobos:",lobo);
 
